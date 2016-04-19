@@ -2,21 +2,14 @@
 <head><title>MinhaCreche.com</title></head>
 <body>
 
-<table>
-<tr color="green">
-<td>
-<img src="creche.jpg" width="40%">
-</td>
-</tr>
-<tr>
-<td color="blue"><h1>MinhaCreche.com</h1></td>
-</tr>
-</table>
+<h1><font color="darkblue">Bem vindo(a)!<br><a href="index.html">MinhaCreche.com</a></font></h1>
 
 
 
 
-<form action="busca.html">
+
+<form>
+
 
 Cidade 
 <select>
@@ -24,6 +17,7 @@ Cidade
 	<option value="RioDeJaneiro">Rio de Janeiro</option>
 	<option value="Niteroi">Niteroi</option>
 </select>
+<font size="2" color="red">(Obrigatorio)</font>
 <br>
 Bairro
 <select>
@@ -33,10 +27,15 @@ Bairro
 	<option value="Flamengo">Flamengo</option>
 	<option value="Botafogo">Botafogo</option>
 </select>
+<font size="2" color="red">(Obrigatorio)</font>
+
 <br>
 <br>
 
-<input type="submit" value="Buscar">
+
+<input type="submit" name="refinar" value="Refinar busca" onclick="javascript: form.action='busca.html';"/>
+<input type="submit" name="todos" value="Ver todos" onclick="javascript: form.action='todasTijuca.html';"/>
+</p
 
 </form>
 
